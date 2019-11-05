@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PhoneAuth</string>
+    <string name="title_activity_main2">Principal</string>
+    <string name="title_activity_otp">Verificação OTP</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_list_nomes">Nomes</string>
+    <string name="title_activity_persist_nome">Salvar Nome</string>
+    <string name="title_activity_show_nome">ShowNomeActivity</string>
+    <string name="title_activity_list_historico">ListHistorico</string>
+    <string name="title_activity_persist_historico">PersistHistorico</string>
+    <string name="title_activity_show_historico">ShowHistoricoActivity</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PersistHistorico"
+    tools:showIn="@layout/activity_persist_historico">
+
+    <Spinner
+        android:id="@+id/spinnerNomes"
+        android:layout_width="213dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Tipo"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/spinnerNomes"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerNomes" />
+
+    <EditText
+        android:id="@+id/edtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/edtTipo"
+        app:layout_constraintTop_toBottomOf="@+id/edtTipo" />
+
+    <EditText
+        android:id="@+id/edtHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Historico"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/edtStatus"
+        app:layout_constraintTop_toBottomOf="@+id/edtStatus" />
+
+
+    <ImageView
+        android:id="@+id/ivShapeCor"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/shape" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cor:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/edtHistorico"
+        app:layout_constraintTop_toBottomOf="@+id/edtHistorico" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
